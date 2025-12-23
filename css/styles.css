@@ -39,6 +39,10 @@ body {
     display: none;
 }
 .back-btn.visible { display: block; }
+.header-logo {
+    width: 40px;
+    height: 40px;
+}
 .header-title {
     font-family: var(--font-display);
     font-size: 28px;
