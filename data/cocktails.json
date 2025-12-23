@@ -1,0 +1,284 @@
+{
+  "categories": [
+    { "id": "petillants", "name": "Pétillants" },
+    { "id": "fruites", "name": "Fruités" },
+    { "id": "herbaces", "name": "Herbacés" },
+    { "id": "corses", "name": "Corsés" }
+  ],
+  "cocktails": [
+    {
+      "id": "negroni-sbagliato",
+      "name": "Negroni Sbagliato",
+      "category": "petillants",
+      "glass": "rocks",
+      "description": "Amer/Pétillant/Herbacé",
+      "ingredients": [
+        { "name": "Campari", "amount": "1 oz" },
+        { "name": "Vermouth rouge", "amount": "1 oz" },
+        { "name": "Vin mousseux brut", "amount": "1 oz" },
+        { "name": "Zeste d'orange", "amount": "1" }
+      ],
+      "instructions": "Remplir un verre old fashioned de glace. Ajouter le Campari et le vermouth, remuer légèrement. Compléter avec le vin mousseux et garnir d'un zeste d'orange."
+    },
+    {
+      "id": "old-cuban",
+      "name": "Old Cuban",
+      "category": "petillants",
+      "glass": "coupe",
+      "description": "Frais/Mentholé/Pétillant",
+      "ingredients": [
+        { "name": "Rhum vieilli", "amount": "1.5 oz" },
+        { "name": "Jus de lime frais", "amount": "0.75 oz" },
+        { "name": "Sirop simple", "amount": "1 oz" },
+        { "name": "Feuilles de menthe", "amount": "6" },
+        { "name": "Angostura bitters", "amount": "2 traits" },
+        { "name": "Vin mousseux brut", "amount": "2 oz" }
+      ],
+      "instructions": "Écraser délicatement la menthe avec le sirop et le jus de lime. Ajouter le rhum et les bitters, shaker avec glace. Filtrer dans une coupe et compléter avec le vin mousseux."
+    },
+    {
+      "id": "air-mail",
+      "name": "Air Mail",
+      "category": "petillants",
+      "glass": "coupe",
+      "description": "Doux/Miellé/Pétillant",
+      "ingredients": [
+        { "name": "Rhum ambré", "amount": "1.5 oz" },
+        { "name": "Jus de lime", "amount": "0.75 oz" },
+        { "name": "Sirop de miel (2:1)", "amount": "0.75 oz" },
+        { "name": "Vin mousseux brut", "amount": "2 oz" }
+      ],
+      "instructions": "Shaker le rhum, le citron et le sirop de miel avec glace. Filtrer dans une coupe et compléter avec le vin mousseux."
+    },
+    {
+      "id": "hugo-spritz",
+      "name": "Hugo Spritz",
+      "category": "petillants",
+      "glass": "wine",
+      "description": "Floral/Léger/Frais",
+      "ingredients": [
+        { "name": "St-Germain", "amount": "2 oz" },
+        { "name": "Vin mousseux brut", "amount": "3 oz" },
+        { "name": "Eau gazeuse", "amount": "1 oz" },
+        { "name": "Feuilles de menthe", "amount": "8" },
+        { "name": "Quartier de lime", "amount": "1" }
+      ],
+      "instructions": "Construire directement dans un grand verre rempli de glace. Remuer doucement et garnir de menthe et de lime."
+    },
+    {
+      "id": "jungle-bird",
+      "name": "Jungle Bird",
+      "category": "fruites",
+      "glass": "rocks",
+      "description": "Amer-doux/Fruité/Tropical",
+      "ingredients": [
+        { "name": "Rhum jamaïcain", "amount": "1.5 oz" },
+        { "name": "Campari", "amount": "0.75 oz" },
+        { "name": "Jus d'ananas", "amount": "1.5 oz" },
+        { "name": "Jus de lime", "amount": "0.5 oz" },
+        { "name": "Sirop simple", "amount": "0.5 oz" }
+      ],
+      "instructions": "Shaker tous les ingrédients avec glace. Filtrer sur glace dans un verre old fashioned."
+    },
+    {
+      "id": "mexican-firing-squad",
+      "name": "Mexican Firing Squad",
+      "category": "fruites",
+      "glass": "rocks",
+      "description": "Acidulé/Épicé/Fruité",
+      "ingredients": [
+        { "name": "Tequila blanco", "amount": "2 oz" },
+        { "name": "Jus de lime", "amount": "0.75 oz" },
+        { "name": "Grenadine", "amount": "0.75 oz" },
+        { "name": "Angostura bitters", "amount": "3 traits" }
+      ],
+      "instructions": "Shaker tous les ingrédients avec glace et servir sur glace dans un verre old fashioned."
+    },
+    {
+      "id": "clover-club",
+      "name": "Clover Club",
+      "category": "fruites",
+      "glass": "coupe",
+      "description": "Fruité/Soyeux/Vif",
+      "ingredients": [
+        { "name": "Gin", "amount": "2 oz" },
+        { "name": "Jus de citron", "amount": "0.75 oz" },
+        { "name": "Sirop de framboise", "amount": "0.75 oz" },
+        { "name": "Blanc d'œuf", "amount": "1" }
+      ],
+      "instructions": "Dry shake puis shaker avec glace. Filtrer dans une coupe."
+    },
+    {
+      "id": "ramos-gin-fizz",
+      "name": "Ramos Gin Fizz",
+      "category": "fruites",
+      "glass": "highball",
+      "description": "Crémeux/Floral/Onctueux",
+      "ingredients": [
+        { "name": "Gin", "amount": "2 oz" },
+        { "name": "Jus de citron", "amount": "0.5 oz" },
+        { "name": "Jus de lime", "amount": "0.5 oz" },
+        { "name": "Sirop simple", "amount": "1 oz" },
+        { "name": "Crème", "amount": "2 oz" },
+        { "name": "Blanc d'œuf", "amount": "1" },
+        { "name": "Eau de fleur d'oranger", "amount": "3 gouttes" },
+        { "name": "Eau gazeuse", "amount": "2 oz" }
+      ],
+      "instructions": "Dry shake longuement, puis shaker avec glace. Filtrer et compléter avec eau gazeuse."
+    },
+    {
+      "id": "chartreuse-swizzle",
+      "name": "Chartreuse Swizzle",
+      "category": "herbaces",
+      "glass": "highball",
+      "description": "Herbacé/Tropical/Complexe",
+      "ingredients": [
+        { "name": "Green Chartreuse", "amount": "1.5 oz" },
+        { "name": "Falernum", "amount": "0.75 oz" },
+        { "name": "Jus d'ananas", "amount": "1 oz" },
+        { "name": "Jus de lime", "amount": "0.75 oz" }
+      ],
+      "instructions": "Verser tous les ingrédients dans un verre rempli de glace pilée. Swizzler jusqu'à givrage du verre."
+    },
+    {
+      "id": "division-bell",
+      "name": "Division Bell",
+      "category": "herbaces",
+      "glass": "coupe",
+      "description": "Fumé/Amer/Vif",
+      "ingredients": [
+        { "name": "Mezcal", "amount": "1.5 oz" },
+        { "name": "Aperol", "amount": "0.75 oz" },
+        { "name": "Liqueur de Maraschino", "amount": "0.5 oz" },
+        { "name": "Jus de lime", "amount": "0.75 oz" }
+      ],
+      "instructions": "Shaker avec glace et filtrer dans une coupe refroidie."
+    },
+    {
+      "id": "last-word",
+      "name": "Last Word",
+      "category": "herbaces",
+      "glass": "coupe",
+      "description": "Herbacé/Vif/Sec",
+      "ingredients": [
+        { "name": "Gin", "amount": "0.75 oz" },
+        { "name": "Green Chartreuse", "amount": "0.75 oz" },
+        { "name": "Liqueur de Maraschino", "amount": "0.75 oz" },
+        { "name": "Jus de lime", "amount": "0.75 oz" }
+      ],
+      "instructions": "Shaker avec glace et filtrer dans une coupe refroidie."
+    },
+    {
+      "id": "paper-plane",
+      "name": "Paper Plane",
+      "category": "herbaces",
+      "glass": "coupe",
+      "description": "Amer/Agrume/Sec",
+      "ingredients": [
+        { "name": "Rye whiskey", "amount": "0.75 oz" },
+        { "name": "Aperol", "amount": "0.75 oz" },
+        { "name": "Amaro Nonino", "amount": "0.75 oz" },
+        { "name": "Jus de citron frais", "amount": "0.75 oz" }
+      ],
+      "instructions": "Shaker tous les ingrédients avec glace. Filtrer dans une coupe refroidie."
+    },
+    {
+      "id": "industry-sour",
+      "name": "Industry Sour",
+      "category": "herbaces",
+      "glass": "coupe",
+      "description": "Mentholé/Amer/Vif",
+      "ingredients": [
+        { "name": "Fernet-Branca", "amount": "1 oz" },
+        { "name": "Green Chartreuse", "amount": "1 oz" },
+        { "name": "Jus de lime", "amount": "1 oz" },
+        { "name": "Sirop simple", "amount": "1 oz" }
+      ],
+      "instructions": "Shaker tous les ingrédients avec glace. Filtrer dans une coupe."
+    },
+    {
+      "id": "sazerac",
+      "name": "Sazerac",
+      "category": "corses",
+      "glass": "rocks",
+      "description": "Sec/Puissant/Anisé",
+      "ingredients": [
+        { "name": "Rye whiskey", "amount": "1.5 oz" },
+        { "name": "Sucre", "amount": "1 morceau" },
+        { "name": "Peychaud's bitters", "amount": "3 traits" },
+        { "name": "Absinthe", "amount": "rinçage" }
+      ],
+      "instructions": "Rincer un verre refroidi à l'absinthe. Remuer le reste avec glace, filtrer sans glace et garnir d'un zeste de citron."
+    },
+    {
+      "id": "improved-whiskey-cocktail",
+      "name": "Improved Whiskey Cocktail",
+      "category": "corses",
+      "glass": "rocks",
+      "description": "Corsé/Complexe/Anisé",
+      "ingredients": [
+        { "name": "Rye whiskey", "amount": "2 oz" },
+        { "name": "Sucre", "amount": "1 c. à café" },
+        { "name": "Liqueur de Maraschino", "amount": "0.25 oz" },
+        { "name": "Absinthe", "amount": "1 trait" },
+        { "name": "Angostura bitters", "amount": "2 traits" }
+      ],
+      "instructions": "Remuer tous les ingrédients avec glace et filtrer dans un verre old fashioned."
+    },
+    {
+      "id": "fancy-free",
+      "name": "Fancy Free",
+      "category": "corses",
+      "glass": "rocks",
+      "description": "Doux/Boisé/Épicé",
+      "ingredients": [
+        { "name": "Rye whiskey", "amount": "2 oz" },
+        { "name": "Liqueur de Maraschino", "amount": "0.5 oz" },
+        { "name": "Angostura bitters", "amount": "1 trait" },
+        { "name": "Orange bitters", "amount": "1 trait" }
+      ],
+      "instructions": "Remuer avec glace et filtrer sur un gros glaçon. Garnir d'un zeste d'orange."
+    },
+    {
+      "id": "kingston-negroni",
+      "name": "Kingston Negroni",
+      "category": "corses",
+      "glass": "rocks",
+      "description": "Amer/Funky/Épicé",
+      "ingredients": [
+        { "name": "Rhum jamaïcain", "amount": "1 oz" },
+        { "name": "Campari", "amount": "1 oz" },
+        { "name": "Vermouth rouge", "amount": "1 oz" },
+        { "name": "Zeste d'orange", "amount": "1" }
+      ],
+      "instructions": "Remuer tous les ingrédients avec glace et filtrer sur un gros glaçon. Garnir d'un zeste d'orange."
+    },
+    {
+      "id": "toronto",
+      "name": "Toronto",
+      "category": "corses",
+      "glass": "coupe",
+      "description": "Sec/Mentholé/Amer",
+      "ingredients": [
+        { "name": "Rye whiskey", "amount": "2 oz" },
+        { "name": "Fernet-Branca", "amount": "0.25 oz" },
+        { "name": "Sirop riche", "amount": "0.25 oz" },
+        { "name": "Angostura bitters", "amount": "2 traits" }
+      ],
+      "instructions": "Remuer tous les ingrédients avec glace. Filtrer dans une coupe refroidie et garnir d'un zeste d'orange."
+    },
+    {
+      "id": "revolver",
+      "name": "Revolver",
+      "category": "corses",
+      "glass": "coupe",
+      "description": "Riche/Café/Aromatique",
+      "ingredients": [
+        { "name": "Rye whiskey", "amount": "2 oz" },
+        { "name": "Liqueur de café", "amount": "0.5 oz" },
+        { "name": "Orange bitters", "amount": "2 traits" }
+      ],
+      "instructions": "Remuer avec glace et filtrer dans une coupe. Garnir d'un zeste d'orange flambé."
+    }
+  ]
+}
