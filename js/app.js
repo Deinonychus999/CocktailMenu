@@ -1,5 +1,6 @@
 let cocktailData = { categories: [], cocktails: [] };
 let activeCategory = 'all';
+let searchQuery = '';
 
 // Elegant line-art glass SVG icons
 const glassIcons = {
@@ -39,6 +40,9 @@ const modalContent = document.getElementById('modalContent');
 const modalClose = document.getElementById('modalClose');
 const headerTitle = document.getElementById('headerTitle');
 const backBtn = document.getElementById('backBtn');
+const searchBar = document.getElementById('searchBar');
+const searchBtn = document.getElementById('searchBtn');
+const searchInput = document.getElementById('searchInput');
 
 async function init() {
     try {
@@ -79,27 +83,40 @@ backBtn.addEventListener('click', () => {
     categoryTabs.querySelector('[data-category="all"]').click();
 });
 
+function filterByIngredient(cocktails) {
+    if (!searchQuery) return cocktails;
+    const query = searchQuery.toLowerCase();
+    return cocktails.filter(c =>
+        c.ingredients.some(i => i.name.toLowerCase().includes(query))
+    );
+}
+
 function renderCocktails() {
-    const filtered = activeCategory === 'all'
+    let filtered = activeCategory === 'all'
         ? cocktailData.cocktails
         : cocktailData.cocktails.filter(c => c.category === activeCategory);
+
+    filtered = filterByIngredient(filtered);
 
     if (activeCategory === 'all') {
         const grouped = {};
         cocktailData.categories.forEach(cat => {
-            const items = cocktailData.cocktails.filter(c => c.category === cat.id);
+            const items = filterByIngredient(cocktailData.cocktails.filter(c => c.category === cat.id));
             if (items.length) grouped[cat.id] = { name: cat.name, items };
         });
 
-        mainContent.innerHTML = Object.entries(grouped)
+        const html = Object.entries(grouped)
             .map(([id, g]) => `
                 <section class="category-section">
                     <h2 class="category-header">${g.name}</h2>
                     ${g.items.map(createCocktailItem).join('')}
                 </section>
             `).join('');
+        mainContent.innerHTML = html || '<p class="no-results">Aucun cocktail trouvé</p>';
     } else {
-        mainContent.innerHTML = filtered.map(createCocktailItem).join('');
+        mainContent.innerHTML = filtered.length
+            ? filtered.map(createCocktailItem).join('')
+            : '<p class="no-results">Aucun cocktail trouvé</p>';
     }
 
     mainContent.querySelectorAll('.cocktail-item').forEach(item => {
@@ -177,5 +194,31 @@ function closeModal() {
 modalClose.addEventListener('click', closeModal);
 modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// Search functionality
+searchBtn.addEventListener('click', () => {
+    const isActive = searchBar.classList.toggle('active');
+    if (isActive) {
+        searchInput.focus();
+    } else {
+        searchInput.value = '';
+        searchQuery = '';
+        renderCocktails();
+    }
+});
+
+searchInput.addEventListener('input', (e) => {
+    searchQuery = e.target.value;
+    renderCocktails();
+});
+
+searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        searchBar.classList.remove('active');
+        searchInput.value = '';
+        searchQuery = '';
+        renderCocktails();
+    }
+});
 
 init();
